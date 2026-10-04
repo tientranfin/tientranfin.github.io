@@ -1,0 +1,7 @@
+title: Kiến thức Kinh tế, Ngành và Doanh nghiệp
+description: Ghi chép và phân tích kinh tế vĩ mô, ngành và doanh nghiệp, tập trung vào các yếu tố tác động đến hoạt động kinh doanh.
+lang: vi
+timezone: Asia/Ho_Chi_Minh
+permalink: /bai-viet/:title/
+exclude:
+  - README.md

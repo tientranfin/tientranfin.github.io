@@ -1,0 +1,32 @@
+---
+layout: default
+title: Trang chủ
+---
+<section class="hero">
+  <div class="wrap">
+    <h1>Kinh tế vĩ mô, ngành và doanh nghiệp: những yếu tố quyết định kết quả kinh doanh</h1>
+    <p>Ghi chép và phân tích có số liệu, có nguồn, luôn quay về một câu hỏi: điều này tác động thế nào đến hoạt động của doanh nghiệp?</p>
+  </div>
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+    <polyline pathLength="1" points="0,98 100,90 200,95 300,72 400,78 500,54 600,62 700,40 800,48 900,32 1000,38 1100,20 1200,26"/>
+  </svg>
+</section>
+
+<section class="wrap block">
+  <h2 class="section-title">Các chuyên mục</h2>
+  <ul class="topics">
+    {% for s in site.data.sections %}
+    {% assign n = site.posts | where: "section", s.key | size %}
+    <li class="topic">
+      <h3><a href="{{ s.url | relative_url }}">{{ s.title }}</a></h3>
+      <p>{{ s.desc }}</p>
+      <span class="count">{{ n }} bài</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wrap narrow block" style="padding-top:0">
+  <h2 class="section-title">Bài mới</h2>
+  {% include post-list.html items=site.posts limit=6 %}
+</section>
