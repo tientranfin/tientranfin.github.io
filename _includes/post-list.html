@@ -1,0 +1,14 @@
+<ul class="post-list">
+{%- assign max = include.limit | default: 100 -%}
+{%- for p in include.items limit: max -%}
+{%- assign ps = site.data.sections | where: "key", p.section | first -%}
+<li>
+<time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%d/%m/%Y" }}</time>
+<div>
+<a class="post-title" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+<span class="post-meta">{{ ps.title }}</span>
+<p>{{ p.summary }}</p>
+</div>
+</li>
+{%- endfor -%}
+</ul>

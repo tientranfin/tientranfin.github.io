@@ -1,0 +1,7 @@
+<figure class="nk-chart" data-type="{{ include.type | default: 'line' }}" data-labels="{{ include.labels | escape }}" data-series="{{ include.series | escape }}" data-unit="{{ include.unit | escape }}">
+<figcaption class="chart-title">{{ include.title }}</figcaption>
+<div class="chart-canvas"><canvas role="img" aria-label="{{ include.title | escape }}"></canvas></div>
+{%- if include.source %}
+<p class="chart-source">Nguồn: {{ include.source }}</p>
+{%- endif %}
+</figure>

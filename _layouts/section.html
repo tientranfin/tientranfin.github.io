@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign s = site.data.sections | where: "key", page.section | first %}
+{% assign items = site.posts | where: "section", page.section %}
+<div class="wrap narrow block">
+  <h1 class="page-title">{{ s.title }}</h1>
+  <p class="lede">{{ s.desc }}</p>
+  {% if items.size > 0 %}
+    {% include post-list.html items=items %}
+  {% else %}
+    <p class="empty">Chưa có bài nào trong chuyên mục này. Thêm file vào thư mục <code>_posts</code> với dòng <code>section: {{ page.section }}</code> để bài hiện ở đây.</p>
+  {% endif %}
+</div>

@@ -1,0 +1,16 @@
+- key: macro
+  title: Kinh tế vĩ mô
+  url: /kinh-te-vi-mo/
+  desc: Tăng trưởng, lạm phát, lãi suất, tỷ giá, chính sách tiền tệ và tài khóa, thương mại quốc tế.
+- key: industry
+  title: Phân tích ngành
+  url: /phan-tich-nganh/
+  desc: Chuỗi giá trị, chu kỳ ngành, cung cầu, giá hàng hóa, cạnh tranh và rào cản gia nhập.
+- key: company
+  title: Phân tích doanh nghiệp
+  url: /phan-tich-doanh-nghiep/
+  desc: Báo cáo tài chính, biên lợi nhuận, ROE, dòng tiền, đòn bẩy và định giá.
+- key: factors
+  title: Yếu tố tác động
+  url: /yeu-to-tac-dong/
+  desc: Chính trị, pháp lý, thuế, chính sách thương mại, công nghệ, môi trường và xã hội (khung PESTEL).
